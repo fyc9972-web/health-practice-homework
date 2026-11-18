@@ -1,0 +1,67 @@
+{
+  "versions": {
+    "python": "3.12.6",
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.8.0"
+  },
+  "sources": {
+    "svm-pbl-intro-with-kernel.pptx": "b976f138701e962628b3f9a694ebae24b8ac6e3edb852005f23805ef61cd248f",
+    "student-worksheet.md": "28a57fed71dc29dff2bc185c7bc411fedc02ac598e3c7e1efc69325704a578ad",
+    "svm-lab.ipynb": "14e1c0acf73d8833de7ff2a1dbfd83e552be654d0111bbabf38076705b2bd851",
+    "scripts/lab_utils.py": "80953558e31e82951efd32d11726e81d4ea725e98afd962c44b8779c6eaf2aa2",
+    "data/student/train.csv": "bffc890a0dcfde5769fb7185648e001275eaa0d6196943af872e31722dba4648",
+    "data/student/validation.csv": "3aaa7522fdb7df04ed8bfadb6d3ed3a52b6b9db6c8bb72d4d23970f49ad6413d"
+  },
+  "actual_rerun": true,
+  "test_opened": false,
+  "configs": {
+    "linear": [
+      "linear",
+      1.0,
+      0.1
+    ],
+    "rbf": [
+      "rbf",
+      10.0,
+      10.0
+    ]
+  },
+  "scaling_max_score_changes": {
+    "False": 1.5376598755511461,
+    "True": 1.7763568394002505e-14
+  },
+  "runtime_compatibility": "In-memory REPO=BASE assignment replaces unused legacy parent-depth lookup; original course file unchanged.",
+  "geometry_w": [
+    0.7286852427151724,
+    0.7492279528445728
+  ],
+  "geometry_b": -0.020002722800898765,
+  "validation": {
+    "linear": {
+      "n": 62,
+      "TN": 18,
+      "FP": 2,
+      "FN": 16,
+      "TP": 26,
+      "accuracy": 0.7096774193548387,
+      "balanced_accuracy": 0.7595238095238095,
+      "sensitivity": 0.6190476190476191,
+      "specificity": 0.9,
+      "roc_auc": 0.8297619047619048
+    },
+    "rbf": {
+      "n": 62,
+      "TN": 16,
+      "FP": 4,
+      "FN": 8,
+      "TP": 34,
+      "accuracy": 0.8064516129032258,
+      "balanced_accuracy": 0.8047619047619048,
+      "sensitivity": 0.8095238095238095,
+      "specificity": 0.8,
+      "roc_auc": 0.7809523809523811
+    }
+  }
+}

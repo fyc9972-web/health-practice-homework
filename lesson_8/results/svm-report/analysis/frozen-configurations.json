@@ -1,0 +1,22 @@
+{
+  "features": [
+    "pelvic_incidence",
+    "degree_spondylolisthesis"
+  ],
+  "scaler_fit": "Original 186 training records only",
+  "selection_rule": "Within each family: max validation balanced accuracy, then min C, then min gamma",
+  "configs": {
+    "linear": [
+      "linear",
+      1.0,
+      0.1
+    ],
+    "rbf": [
+      "rbf",
+      10.0,
+      10.0
+    ]
+  },
+  "test_threshold": 0,
+  "refit_with_validation": false
+}

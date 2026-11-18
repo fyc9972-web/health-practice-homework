@@ -1,0 +1,294 @@
+{
+  "source_hashes_unchanged": {
+    "svm-pbl-intro-with-kernel.pptx": true,
+    "student-worksheet.md": true,
+    "svm-lab.ipynb": true,
+    "scripts/lab_utils.py": true,
+    "data/student/train.csv": true,
+    "data/student/validation.csv": true
+  },
+  "actual_pages": 13,
+  "expected_chapter_starts": true,
+  "header_footer_parts": [],
+  "page_number_fields": false,
+  "embedded_figures": 13,
+  "editable_equations": 11,
+  "explicit_page_breaks": 12,
+  "experimental_models": [
+    {
+      "configuration": [
+        "linear",
+        0.01,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "linear",
+        0.1,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "linear",
+        1,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "linear",
+        10,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "linear",
+        100,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        0.1,
+        0.01
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        0.1,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        0.1,
+        1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        0.1,
+        10
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        1,
+        0.01
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        1,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        1,
+        1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        1,
+        10
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        10,
+        0.01
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        10,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        10,
+        1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        10,
+        10
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        100,
+        0.01
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        100,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        100,
+        1
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "rbf",
+        100,
+        10
+      ],
+      "fit_status": 0,
+      "features": 2
+    },
+    {
+      "configuration": [
+        "poly",
+        1.0,
+        0.1
+      ],
+      "fit_status": 0,
+      "features": 2
+    }
+  ],
+  "validation_metrics_recomputed": true,
+  "locked_test_evaluated": false,
+  "figure_dimensions": [
+    {
+      "file": "fig01_data.png",
+      "width": 2660,
+      "height": 1064
+    },
+    {
+      "file": "fig02_margin.png",
+      "width": 2660,
+      "height": 1102
+    },
+    {
+      "file": "fig03_support.png",
+      "width": 2660,
+      "height": 1064
+    },
+    {
+      "file": "fig04_hinge.png",
+      "width": 2660,
+      "height": 1007
+    },
+    {
+      "file": "fig05_duality.png",
+      "width": 2660,
+      "height": 1007
+    },
+    {
+      "file": "fig06_linear_c.png",
+      "width": 2660,
+      "height": 1007
+    },
+    {
+      "file": "fig07_kernels.png",
+      "width": 2660,
+      "height": 1083
+    },
+    {
+      "file": "fig08_gamma.png",
+      "width": 2660,
+      "height": 1064
+    },
+    {
+      "file": "fig09_slices.png",
+      "width": 2660,
+      "height": 950
+    },
+    {
+      "file": "fig10_grid.png",
+      "width": 2660,
+      "height": 931
+    },
+    {
+      "file": "fig11_scaling.png",
+      "width": 2660,
+      "height": 1064
+    },
+    {
+      "file": "fig12_evaluation.png",
+      "width": 2660,
+      "height": 1064
+    },
+    {
+      "file": "fig13_noise.png",
+      "width": 2660,
+      "height": 1045
+    }
+  ],
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "clipping_or_overflow_found": false,
+    "corrected": [
+      "Legends no longer obscure geometry points.",
+      "Hand-calculation parameter lines use left alignment."
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pdf_pages": 3,
+  "page_rendering": "Windows.Data.Pdf; all three pages visually inspected",
+  "layout": "A4, two-column body, full-width figures, three-rule table",
+  "body_fonts": [
+    "SimSun",
+    "SimHei",
+    "Times New Roman"
+  ],
+  "math": "Office Math (OMML), three editable display equations",
+  "figures": 3,
+  "reference_results_refitted": false,
+  "locked_test_evaluated": false,
+  "checks": [
+    "PDF signature",
+    "DOCX opens",
+    "3 embedded figures",
+    "3 OMML equations",
+    "2 manual page breaks",
+    "6 table rows",
+    "3-page render",
+    "visual inspection"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "geometry": {
+    "w": [
+      0.7286852348045,
+      0.7492279447108867
+    ],
+    "b": -0.020002717516875622,
+    "minimum_distances": [
+      0.38272260791301754,
+      0.9568065197825433,
+      0.3827226079130173
+    ],
+    "ids": [
+      "V213",
+      "V215",
+      "V216",
+      "V217",
+      "V061",
+      "V068",
+      "V072",
+      "V073"
+    ]
+  },
+  "figure_1": "Reconstructed from student train.csv; no optimizer used.",
+  "figure_2": "Analytical RBF values, not patient measurements.",
+  "figure_3_and_table_1": "Course teacher-reference.md; not refitted.",
+  "test_labels": "Not read or evaluated."
+}
