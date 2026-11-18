@@ -1,0 +1,170 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>机器学习基础与朴素贝叶斯：重点知识清单与概念讲解</title><style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#edf2f6;color:#182938;font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:16px;line-height:1.85}
+main{max-width:1120px;margin:32px auto;padding:44px 54px;background:white;border-top:7px solid #176e81;box-shadow:0 6px 32px #233c4d12}
+h1{font-size:29px;line-height:1.45;color:#103d53;margin-top:0}h2{font-size:23px;color:#145b70;border-bottom:1px solid #c9dce4;padding-bottom:8px;margin-top:36px}h3{font-size:19px;color:#214b61;margin-top:25px}
+p{margin:12px 0}a{color:#126889;text-decoration:none}a:hover{text-decoration:underline}code{font:0.9em Consolas,monospace;overflow-wrap:anywhere;background:#eff5f7;padding:2px 4px;border-radius:3px}pre{padding:18px;background:#eff5f7;white-space:pre-wrap;overflow-wrap:anywhere}pre code{padding:0;background:none}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:20px 0;line-height:1.65}th,td{padding:9px 10px;border:1px solid #ccdae2;text-align:left;overflow-wrap:anywhere}th{background:#e7f0f4;color:#164b60}tbody tr:nth-child(even){background:#f7fafb}thead{display:table-header-group}tr{break-inside:avoid}
+figure{margin:24px 0;text-align:center;break-inside:avoid}figure img{max-width:100%;height:auto}figcaption{font-size:13px;color:#526c7b;margin-top:8px}nav{font-size:14px;padding:12px;background:#edf5f8;margin-bottom:24px}nav a{margin-right:20px}
+li{margin:8px 0}.check{list-style:none}.check:before{content:'☐ ';color:#176e81}
+@media(max-width:750px){main{margin:0;padding:22px 18px}table{font-size:12px}th,td{padding:5px}h1{font-size:24px}}
+@media print{@page{size:A4;margin:16mm}body{background:white;font-size:10.5pt}main{max-width:none;margin:0;padding:0;border:0;box-shadow:none}nav{display:none}h1{font-size:20pt}h2{font-size:15pt;break-after:avoid}h3{font-size:12pt;break-after:avoid}table{font-size:8.5pt}th,td{padding:5px}a{color:inherit}pre{font-size:9pt}}
+</style></head><body><main><nav><a href="experiment-report.html">图文报告</a><a href="operation-guide.html">操作说明</a><a href="knowledge-guide.html">知识清单</a></nav><h1>机器学习基础与朴素贝叶斯：重点知识清单与概念讲解</h1>
+<p>本清单围绕课件的七个核心问题展开。建议先读下面的知识总表，再按第一至第七部分逐项理解。每部分依次说明概念是什么、为什么需要它、怎样用一个小例子理解，以及需要能够回答的问题。文中小例子仅用于讲概念。</p>
+<h2>先看全貌：这节课究竟要掌握什么</h2>
+<table><thead><tr><th>顺序</th><th>核心知识</th><th>你最后应能回答的问题</th></tr></thead><tbody><tr><td>1</td><td>数据模型及基本组成</td><td>样本、特征、标签、参数分别是什么？模型怎样把输入变成输出？</td></tr><tr><td>2</td><td>训练、预测与泛化</td><td>模型怎样学习？学习和使用有什么区别？为什么还要检验新数据？</td></tr><tr><td>3</td><td>训练集、验证集、测试集</td><td>为什么估计参数、选择方案和最终评价要分开？</td></tr><tr><td>4</td><td>条件概率、贝叶斯与朴素贝叶斯</td><td>怎样根据观察到的特征更新类别概率？“朴素”假设简化了什么？</td></tr><tr><td>5</td><td>损失函数与对数损失</td><td>怎样衡量一次概率预测的错误程度？为什么分类全对仍有损失差别？</td></tr><tr><td>6</td><td>混淆矩阵、分类指标与阈值</td><td>漏诊和误报怎样统计？各指标的分母是谁？改变阈值有什么影响？</td></tr><tr><td>7</td><td>医学评价中accuracy的局限</td><td>为什么还要考虑类别比例、错误代价、概率可靠性和泛化范围？</td></tr></tbody></table>
+<p>可以先记住这条知识主线：<strong>数据提供学习材料 → 模型学到参数 → 根据输入计算概率 → 阈值形成类别判断 → 用损失和指标评价 → 检查结论能适用于哪些新数据。</strong></p>
+<h2>一、数据模型：先分清模型的组成</h2>
+<h3>1. 样本、特征和标签</h3>
+<p>想象一张用于研究疾病预测的数据表：一行对应一条观察记录，有些列记录症状，另有一列记录疾病状态。</p>
+<table><thead><tr><th>概念</th><th>通俗解释</th><th>举例</th></tr></thead><tbody><tr><td>样本sample</td><td>一个观察对象对应的一条记录</td><td>某次观察所得的一组症状及疾病状态</td></tr><tr><td>特征feature</td><td>模型用来判断的输入信息</td><td>是否发热、是否恶心</td></tr><tr><td>标签label</td><td>希望预测的目标值</td><td>是否患有目标疾病</td></tr></tbody></table>
+<p>特征合起来写成向量x，标签常写成y。二分类标签通常用0和1表示，例如0为阴性、1为阳性。<strong>“标签”由预测目标决定，并非表中任意一列都能当输入。</strong></p>
+<p>训练时标签帮助模型学习；面对需要预测的新对象时，模型利用特征推断未知标签。若把目标标签本身作为输入，就相当于将答案直接告诉模型。</p>
+<h3>2. 数据模型与参数</h3>
+<p><strong>数据模型是描述输入与输出关系、可以用来作预测的规则或数学表示。</strong>只列出“发热、恶心”等特征，还没有说明怎样根据这些信息判断疾病，因此尚未定义完整模型。</p>
+<p>可以写成：<code>预测结果 = 模型（输入；参数）</code>。</p>
+<p>参数是这条关系中的数值。例如模型可能需要知道“阳性记录占多大比例”“阳性类别中有多少记录发热”。这些量可以从数据估计，因此模型能从数据中学习。</p>
+<h3>3. 概率、类别和阈值</h3>
+<table><thead><tr><th>概念</th><th>含义</th></tr></thead><tbody><tr><td>阳性概率p</td><td>模型认为目标为阳性的可能程度，取值在0到1之间</td></tr><tr><td>类别预测ŷ</td><td>模型最后作出的0或1判断</td></tr><tr><td>阈值t</td><td>把概率转成类别的判定界限</td></tr></tbody></table>
+<p>常见规则是：<code>p≥t时，ŷ=1；p&lt;t时，ŷ=0</code>。</p>
+<p>例如p=0.8：t=0.5时判阳性，t=0.9时判阴性。概率仍是0.8，改变的是判定标准。<strong>概率、类别、阈值是三个不同的量。</strong>模型给出0.8，也不自动证明现实中同类对象恰有80%患病；这一点还需要评价。</p>
+<p><strong>本部分应掌握：</strong>能给出sample、feature、label、model、parameter的含义；能解释p与ŷ的区别；能说明阈值的作用。</p>
+<h2>二、训练、预测、泛化：学习、使用与检验</h2>
+<h3>1. 训练training</h3>
+<p>训练是利用已有的输入和标签确定或调整模型参数。</p>
+<p>例如，一个简化的频率模型发现：有某症状的10条已知记录中，8条为阳性，于是把“有该症状”的阳性概率估计为8/10=0.8。这个从已知记录获得数值的过程就是学习。</p>
+<h3>2. 预测prediction</h3>
+<p>预测是使用已确定的参数，将一个输入转换成概率或类别。</p>
+<p>对上面的模型，遇到一个有该症状的新对象，便输出0.8。预测时不需要提前知道它的真实标签，也不会因为多预测一次就自动改变参数。</p>
+<p>若后来新增一条“有该症状、实际阴性”的记录，<strong>重新估计</strong>后才会变成8/11；仅收到新输入并作预测，原模型不会自动更新。</p>
+<h3>3. 泛化generalization</h3>
+<p>泛化指模型对未参与开发的数据仍能有效预测的能力。我们关心模型，不只是因为它能解释已知记录，还因为希望它对新对象有用。</p>
+<p>训练记录上的高分不能单独证明泛化良好。它可能已经适应了训练数据特有的模式，因此要利用未参与相应开发过程的数据评价。</p>
+<h3>4. 过拟合overfitting</h3>
+<p>过拟合是模型过度适应训练数据中的特有细节或偶然规律，导致在未见数据上表现下降。可以类比只记住练习题答案，却没有学会处理新题的规律。</p>
+<p>训练成绩高不等于一定过拟合；关键在于新数据上的表现和差距。有限的验证表现也不足以保证模型在任何人群都有效。</p>
+<p><strong>本部分应掌握：</strong>训练改变参数，预测使用参数，泛化要看开发之外的数据；能用自己的话解释为什么“会预测”不等于“已证明泛化好”。</p>
+<h2>三、三类数据：把学习、选择和最终评价分开</h2>
+<table><thead><tr><th>数据部分</th><th>核心职责</th><th>它回答的问题</th></tr></thead><tbody><tr><td>训练集train</td><td>估计模型参数</td><td>输入与标签之间的关系是什么？</td></tr><tr><td>验证集validation</td><td>比较候选方案、选择设置</td><td>哪一种模型或阈值更合适？</td></tr><tr><td>测试集test</td><td>在方案固定后作最终评价</td><td>选定方案对未参与开发的数据表现怎样？</td></tr></tbody></table>
+<h3>1. 为什么验证集和测试集不能合并职责</h3>
+<p>选择本身会利用数据的信息。假如比较许多候选方案，再选验证成绩最好的一个，最终方案已经适应了验证集，不能只凭该分数认为它对未来同样好。</p>
+<p>测试集的价值在于：在作选择时没有使用它。如果根据测试成绩反复修改方案，它就参与了开发，失去了原本的独立评价作用。</p>
+<h3>2. 什么是信息泄漏</h3>
+<p>信息泄漏是模型开发使用了本不该获得的信息，导致评价过于乐观。常见情形包括将答案作为输入、使用预测当时不可获得的信息，以及让独立评价数据参与估计或选择。</p>
+<h3>3. 数据分开还不等于所有意义上的独立</h3>
+<p>不同记录可能来自同一个人，或者包含重复的输入模式。评价新记录、评价未见输入组合、评价另一家医院的人群，检验的是不同范围的泛化。</p>
+<p><strong>本部分应掌握：</strong>能正确分配“估参、选方案、最终评价”的职责；能解释为什么“看完测试再修改”会改变测试集的用途。</p>
+<h2>四、贝叶斯与朴素贝叶斯：从证据更新概率</h2>
+<p>这部分按“概率方向 → Bayes更新 → 多特征简化 → 二元特征和平滑”理解。</p>
+<h3>1. 先懂条件概率的方向</h3>
+<p><code>P(A|B)</code>读作“在B成立的条件下，A发生的概率”。竖线右侧决定参考集合。</p>
+<p>• <code>P(症状|疾病)</code>：在患病者中，有多少出现该症状？</p>
+<p>• <code>P(疾病|症状)</code>：在有该症状者中，有多少患病？</p>
+<p>两者分母不同，通常不能交换。例如1000人中有10人患病，其中8人有某症状；990名未患病者中99人也有该症状。那么：</p>
+<p><code>P(症状|疾病)=8/10=80%</code>。</p>
+<p><code>P(疾病|症状)=8/(8+99)≈7.48%</code>。</p>
+<p>所以“多数患病者有症状”并不自动意味着“多数有症状者患病”。疾病原本有多常见、未患病者多常有该症状，都会影响后一个概率。</p>
+<h3>2. 先验、似然、后验</h3>
+<table><thead><tr><th>概念</th><th>含义</th><th>对应问题</th></tr></thead><tbody><tr><td>先验prior，P(Y=c)</td><td>考虑当前输入证据之前的类别概率</td><td>这一类别原本多常见？</td></tr><tr><td>似然likelihood，P(x|Y=c)</td><td>假定类别已知时，观察到当前输入的概率</td><td>如果属于这一类，这组特征有多可能出现？</td></tr><tr><td>后验posterior，P(Y=c|x)</td><td>结合输入证据后更新的类别概率</td><td>看到这组特征后，属于这一类的可能性多大？</td></tr></tbody></table>
+<p>Bayes定理给出联系：<code>后验 = 似然 × 先验 / 证据的总概率</code>。</p>
+<p>对于二分类，可以先为两类分别计算权重：</p>
+<p><code>w1=P(x|Y=1)P(Y=1)</code>；<code>w0=P(x|Y=0)P(Y=0)</code>。</p>
+<p>再归一化：<code>P(Y=1|x)=w1/(w0+w1)</code>。</p>
+<p>例如w1=0.03、w0=0.01，阳性后验是0.75，而不是0.03。<strong>权重尚未归一化，不能直接当作类别后验。</strong></p>
+<h3>3. “朴素”是什么意思：条件独立假设</h3>
+<p>若输入有多个特征，需要知道的是整组输入的联合概率。二元特征有m个时，就有2^m种可能组合；直接为全部组合估计概率，可能面临大量组合样本不足的问题。</p>
+<p>朴素贝叶斯作了简化：<strong>给定类别Y后，假定各特征条件独立。</strong>于是用各特征类内概率的乘积表示联合似然：</p>
+<p><code>P(x|Y=c)≈P(X1=x1|Y=c)×…×P(Xm=xm|Y=c)</code>。</p>
+<p>这是假定在每个类别内部独立，不是说所有样本中的特征都互不相关。现实中假设可能不完全成立，因此需要评价其影响。</p>
+<p>若两个输入只是同一信息的完全副本，乘积会把这份证据重复使用。没有增加新信息，预测概率却可能变化，这说明依赖关系会影响NB的推断。假设不成立并不表示每次分类必然出错，也不保证每个评分都会变差。</p>
+<h3>4. Bernoulli：怎样处理0/1特征</h3>
+<p>Bernoulli变量只有0、1两种取值，例如“是否出现某症状”。设：</p>
+<p><code>θcj=P(Xj=1|Y=c)</code>。</p>
+<p>则观察到1时使用θcj，观察到0时使用1−θcj。<strong>未出现也提供信息</strong>，因为两类中“不出现”的概率可能不同。</p>
+<p>完整权重可写成：<code>wc=πc×∏j[θcj^xj×(1−θcj)^(1−xj)]</code>，其中πc是类别先验。先算权重，再归一化为后验，最后才按阈值判断类别。</p>
+<h3>5. Laplace平滑：避免把没见过当成不可能</h3>
+<p>用有限数据计数时，某类中一种特征取值可能一次都没出现。若直接把概率估计为0，乘积中的一个零就会使整个类别权重归零。</p>
+<p>对二元特征采用平滑：<code>θcj=(kcj+α)/(nc+2α)</code>。</p>
+<p>nc为类别c的记录数，kcj为其中第j项特征为1的记录数，α为平滑强度。α=1时，相当于给0和1两种结果各加一次伪计数；分母因此加2，不表示真实新增了两个观察对象。</p>
+<p>例如某类有10条记录，某症状出现0次。α=1时，出现概率从0/10变为1/12，未出现概率为11/12。平滑避免极端估计，但不能修复特征依赖，也不等于完成概率校准。</p>
+<p><strong>本部分应掌握：</strong>能解释两个条件概率方向；能区分先验、似然和后验；能说明归一化、条件独立、0取补概率及平滑的理由。</p>
+<h2>五、损失函数：把概率预测的误差变成数值</h2>
+<h3>1. 单样本损失与平均损失</h3>
+<p>损失函数loss衡量预测与真实结果之间的不一致程度。单样本损失描述一次预测；平均损失将多条记录的损失相加，再除以记录数。</p>
+<p>许多模型通过减小训练损失学习参数。不过，朴素贝叶斯通常通过类别及类内特征计数估计参数；不能将“机器学习会使用损失”理解为“所有模型都用梯度下降训练”。</p>
+<h3>2. 二分类交叉熵，也叫log loss</h3>
+<p>设y是真实类别，p为预测阳性概率，自然对数记为ln：</p>
+<p><code>ℓ(y,p)=−[y ln(p)+(1−y)ln(1−p)]</code>。</p>
+<p>分两种情况理解更容易：</p>
+<p>• y=1时，损失为<code>−ln(p)</code>。</p>
+<p>• y=0时，损失为<code>−ln(1−p)</code>。</p>
+<p>本质是：<strong>模型给真实类别的概率越小，惩罚越大。</strong></p>
+<table><thead><tr><th>真实类别y</th><th>阳性概率p</th><th>给真实类别的概率</th><th>单样本log loss</th></tr></thead><tbody><tr><td>1</td><td>0.6</td><td>0.6</td><td>约0.511</td></tr><tr><td>1</td><td>0.9</td><td>0.9</td><td>约0.105</td></tr><tr><td>0</td><td>0.6</td><td>0.4</td><td>约0.916</td></tr><tr><td>0</td><td>0.99</td><td>0.01</td><td>约4.605</td></tr></tbody></table>
+<h3>3. 为什么accuracy相同，loss却不同</h3>
+<p>真实y=1时，p=0.6和p=0.9在0.5阈值下都判对；accuracy只记录“对”，log loss则区分模型给正确类别的概率。因此分类全对不等于概率预测同样好。</p>
+<p>真实y=0时，p=0.6和p=0.99都判错；后者给真实阴性的概率仅0.01，是更自信的错误，受到更大惩罚。</p>
+<p>平均log loss越小越好，但较低平均损失不代表每个个体的预测都更好，也不自动说明所有错误类型都减少。</p>
+<p><strong>本部分应掌握：</strong>能区分单样本与平均损失；能按y选择p或1−p；能解释log loss与accuracy的不同。</p>
+<h2>六、分类评价：先分清四种结果，再理解指标</h2>
+<h3>1. 混淆矩阵</h3>
+<p>以真实类别为行、预测类别为列：</p>
+<table><thead><tr><th>真实 / 预测</th><th>预测阴性0</th><th>预测阳性1</th></tr></thead><tbody><tr><td>真实阴性0</td><td>TN：正确排除</td><td>FP：误报</td></tr><tr><td>真实阳性1</td><td>FN：漏诊</td><td>TP：正确检出</td></tr></tbody></table>
+<p>先问“真实是什么”，再问“预测成什么”，通常比背缩写更容易。例如实际阳性却判阴性，就是FN。</p>
+<h3>2. 五个主要指标及其分母</h3>
+<table><thead><tr><th>指标</th><th>公式</th><th>实际回答的问题</th></tr></thead><tbody><tr><td>准确率accuracy</td><td>(TP+TN)/n</td><td>全部记录中，判对了多少？</td></tr><tr><td>敏感度sensitivity／召回率recall</td><td>TP/(TP+FN)</td><td>真实阳性中，找到了多少？</td></tr><tr><td>特异度specificity</td><td>TN/(TN+FP)</td><td>真实阴性中，正确排除了多少？</td></tr><tr><td>精确率precision</td><td>TP/(TP+FP)</td><td>预测阳性中，有多少真的阳性？</td></tr><tr><td>F1</td><td>2TP/(2TP+FP+FN)</td><td>精确率和召回率的综合表现怎样？</td></tr></tbody></table>
+<p>敏感度与精确率最容易混淆：<strong>前者从真实阳性出发，后者从预测阳性出发。</strong>例如TP=9、FN=1、FP=2，则敏感度是9/10，而精确率是9/11。</p>
+<p>当模型没有预测任何阳性时，precision的分母为0，应说“未定义”。F1没有利用TN，也不表达所有错误代价，不能包办所有评价。</p>
+<h3>3. 阈值怎样影响漏诊和误报</h3>
+<p>对固定的一组概率降低阈值，会扩大或保持预测阳性的范围。因此FN减少或不变，FP增加或不变；敏感度升高或不变，特异度降低或不变。未必每次都严格变化。</p>
+<p>这体现的是决策取舍：更容易报阳性可能找出更多真阳性，也可能带来更多误报。只改阈值没有改变原概率，因此不会单独改变log loss。</p>
+<p><strong>本部分应掌握：</strong>能说出四种结果的含义；能解释五项指标，尤其是各自的参考群体；能说明降低阈值的取舍。</p>
+<h2>七、为什么医学模型不能只看accuracy</h2>
+<h3>1. 类别不平衡会掩盖漏诊</h3>
+<p>假设1000人中只有10人阳性。模型全部判阴性，accuracy仍为990/1000=99%，但敏感度为0，一个阳性都没找到。</p>
+<p>这说明高accuracy可能主要来自多数类，而没有体现对少数阳性的识别能力。</p>
+<h3>2. 漏诊与误报的代价可能不同</h3>
+<p>漏诊可能延误进一步识别；误报可能带来额外检查、焦虑和处理负担。不同用途对两类错误的重视程度不同，因此需要结合应用目的说明取舍。</p>
+<h3>3. 概率是否可靠，也需要检查</h3>
+<p>概率校准关注：对许多被预测为约80%阳性概率的可比对象，实际阳性比例是否接近80%。单次预测最终只有0或1，不能凭一个对象就判断“80%的概率准不准”。</p>
+<p>可靠性图通常把预测概率分组，以组内平均预测概率为横轴、实际阳性比例为纵轴；接近对角线表示该组两者接近。样本太少时观察比例不稳定，空组没有评价证据。</p>
+<p>分类判对、排序良好和概率校准是不同方面。ROC-AUC概括概率排序能力；AP概括精确率—召回率表现；它们不能直接证明校准良好。AP也不等于梯形积分的PR-AUC。这些属于理解评价全貌的补充，先掌握混淆矩阵和主要指标即可。</p>
+<h3>4. 评价结论要受数据范围约束</h3>
+<p>有限数据上全对，不等于未来永远正确。同来源数据上的评价，也不自动证明对另一医院、另一人群或不同测量条件同样有效。还需要考虑样本量、记录是否独立、是否重复及分布差异。</p>
+<p><strong>本部分应掌握：</strong>能用“全部预测阴性”的例子解释99%accuracy的局限；能说明错误代价、概率可靠性和适用范围为什么不可省略。</p>
+<h2>最后用七句话串起来</h2>
+<p>1. <strong>模型是什么：</strong>用输入与输出的关系作预测，参数可以从数据估计。</p>
+<p>2. <strong>模型怎样学习和使用：</strong>训练确定参数，预测使用参数，泛化检验新数据表现。</p>
+<p>3. <strong>数据怎样分工：</strong>训练集估参，验证集选方案，测试集在方案固定后评价。</p>
+<p>4. <strong>NB怎样推断：</strong>用条件独立假设组合类内特征概率，再通过Bayes结合先验得到后验。</p>
+<p>5. <strong>概率误差怎样衡量：</strong>log loss看真实类别得到的概率，尤其惩罚自信的错误。</p>
+<p>6. <strong>类别结果怎样评价：</strong>混淆矩阵区分错误类型，指标用不同分母回答不同问题。</p>
+<p>7. <strong>医学评价还要考虑什么：</strong>类别比例、漏诊误报、概率可靠性及对新数据的适用范围。</p>
+<h2>概念自测与参考答案</h2>
+<p>先尝试独立回答下面七问，再查看答案。能复述定义之后，还应能解释“为什么”。</p>
+<p>1. 概率p=0.8、阈值t=0.9，类别是什么？概率有没有改变？</p>
+<p>2. 固定模型对新对象预测一次，会自动学到新参数吗？</p>
+<p>3. 为什么不能根据测试成绩反复挑选阈值，再将最高成绩称为独立评价？</p>
+<p>4. <code>P(症状|疾病)</code>与<code>P(疾病|症状)</code>的分母有什么不同？权重为什么还要归一化？</p>
+<p>5. 真实y=0、阳性概率p=0.1时，损失使用−ln(0.1)还是−ln(0.9)？</p>
+<p>6. “真实阳性中检出多少”与“预测阳性中多少是真的”分别对应什么指标？</p>
+<p>7. 一个模型accuracy99%、敏感度0，为什么可能同时成立？</p>
+<p><strong>参考答案：</strong></p>
+<p>1. 类别为0，p仍为0.8；阈值只决定怎样判定。</p>
+<p>2. 不会；更新参数需要相应的重新估计或学习过程。</p>
+<p>3. 测试数据已经参与选择，成绩可能对它过度适应，失去原来的独立评价含义。</p>
+<p>4. 前者参考患病者，后者参考有症状者；权重之和未必为1，归一化才能形成总和为1的类别后验。</p>
+<p>5. −ln(0.9)，因为真实类别是阴性，得到的概率为1−p。</p>
+<p>6. 前者为敏感度／召回率，后者为精确率。</p>
+<p>7. 阳性仅占1%时，全判阴性就会出现这两个结果。</p>
+<h2>掌握情况清单</h2>
+<p class="check">我能用自己的例子说明样本、特征、标签、模型和参数。</p>
+<p class="check">我能解释概率、类别与阈值的区别。</p>
+<p class="check">我能区分训练、预测、泛化和过拟合。</p>
+<p class="check">我能说明训练集、验证集、测试集的职责及信息泄漏。</p>
+<p class="check">我能解释条件概率的方向、先验、似然和后验。</p>
+<p class="check">我能说明条件独立假设用在哪里、为什么会有重复证据问题。</p>
+<p class="check">我能说明Bernoulli特征、补概率及Laplace平滑。</p>
+<p class="check">我能解释单样本损失、平均损失及log loss与accuracy的差别。</p>
+<p class="check">我能解释混淆矩阵及主要指标的分母。</p>
+<p class="check">我能说明阈值改变如何影响漏诊与误报。</p>
+<p class="check">我能解释医学模型为何需要综合评价概率、错误类型和泛化范围。</p>
+<p>勾选依据是你能否用自己的话解释并回答追问。先从第一部分理解起，遇到不清楚的概念，可以直接按章节和概念名称继续提问。</p></main></body></html>
