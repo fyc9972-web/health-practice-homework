@@ -1,0 +1,101 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>线性模型研究简报｜双栏版式样稿</title><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; background:#fff; color:#171B20; }
+body { font-family:'SimSun','Times New Roman',serif; font-size:10pt; }
+.page { width:210mm; height:297mm; padding:14mm 17mm 17mm; position:relative;
+        overflow:hidden; break-after:page; background:#fff; }
+.page:last-child { break-after:auto; }
+.running { display:flex; justify-content:space-between; font-size:7.1pt; color:#516372;
+           letter-spacing:.08em; border-bottom:.35pt solid #A6B3BC; padding-bottom:3mm; }
+h1 { font-family:'SimHei',Arial,sans-serif; font-size:19pt; font-weight:400;
+     line-height:1.34; margin:6mm 0 2mm; letter-spacing:.01em; }
+.subtitle { font-size:10.2pt; line-height:1.5; margin:0 0 2mm; color:#344957; }
+.meta { font-size:7.6pt; color:#65717A; margin:0; line-height:1.5; }
+.abstract { border-top:1pt solid #24445C; border-bottom:.35pt solid #A6B3BC;
+            padding:3mm 0 2.5mm; margin-top:4mm; font-size:9pt; line-height:1.6; }
+.abstract strong { font-family:'SimHei',Arial,sans-serif; font-weight:400; }
+.keywords { font-size:7.8pt; margin:2mm 0 0; color:#4F5F6C; line-height:1.5; }
+.columns { display:grid; grid-template-columns:1fr 1fr; gap:7mm; margin-top:4mm; }
+h2 { font-family:'SimHei',Arial,sans-serif; font-weight:400; font-size:10.8pt;
+     margin:0 0 1.6mm; color:#1F3444; line-height:1.4; }
+h3 { font-family:'SimHei',Arial,sans-serif; font-weight:400; font-size:9.6pt;
+     margin:3mm 0 1mm; line-height:1.4; }
+p { margin:0 0 2mm; line-height:1.65; text-align:justify; }
+.equation { font-family:'Times New Roman','SimSun',serif; font-size:10.3pt;
+            text-align:center; margin:2.1mm 0; line-height:1.5; white-space:nowrap; }
+.eqnumber { color:#7C858C; font-size:7pt; margin-left:3mm; }
+figure { margin:3.5mm 0 0; }
+figure img { display:block; width:100%; height:auto; }
+figcaption { font-size:7.7pt; line-height:1.52; color:#44515D; margin-top:1mm; text-align:justify; }
+.p2 h1 { font-size:16.5pt; margin-top:5mm; }
+.p2 .deck { font-size:9pt; color:#5C6972; line-height:1.55; margin:1.5mm 0 0; }
+.p2 figure { margin-top:4mm; }
+.p2 .columns { margin-top:4mm; }
+.compact p { font-size:9.6pt; line-height:1.65; }
+.compact h2 { font-size:10.3pt; }
+table { border-collapse:collapse; width:100%; font-size:7.8pt; line-height:1.55; margin:2mm 0; }
+th { border-top:.8pt solid #233C4D; border-bottom:.4pt solid #81909B;
+     font-family:'SimHei',Arial,sans-serif; font-weight:400; text-align:left; padding:1.3mm 1mm; }
+td { padding:1.2mm 1mm; vertical-align:top; }
+tbody tr:last-child td { border-bottom:.8pt solid #233C4D; }
+.note { font-size:7.3pt!important; color:#62707A; line-height:1.5!important; }
+.endmatter { margin-top:4mm; padding-top:2mm; border-top:.4pt solid #A6B3BC;
+             font-size:7.3pt; line-height:1.55; color:#586570; }
+.endmatter p { margin-bottom:1mm; line-height:1.55; }
+.folio { position:absolute; bottom:9mm; left:17mm; right:17mm; display:flex;
+         justify-content:space-between; border-top:.35pt solid #A6B3BC; padding-top:2mm;
+         font-family:'Times New Roman','SimSun',serif; color:#66747D; font-size:7pt; }
+@media screen { body { width:210mm; } }
+@media print { .page { -webkit-print-color-adjust:exact; print-color-adjust:exact; } }
+</style></head><body>
+<article class="page p1">
+<div class="running"><span>生物医学数据科学 · 方法简报</span><span>双栏版式预览 · 2026</span></div>
+<h1>线性分类模型的概率建模与决策边界</h1><p class="subtitle">以心脏病教学数据为例比较 Logistic 回归与线性判别分析</p>
+<p class="meta">知识框架与实践审计　|　排版样稿 v0.1　|　2026 年 11 月</p>
+<div class="abstract"><strong>摘要　</strong>Logistic 回归与线性判别分析（LDA）均可产生线性分类边界，但概率来源与估计目标不同。本简报从线性评分、类条件分布和错误代价建立比较框架，并审计当前心脏病教学文件。270 条记录中，阳性 120 条、阴性 150 条；部分输入存在较高缺失比例。方法选择应综合编码维度、假设压力、概率质量及验证稳定性，避免将内部排序优势直接解释为临床效用。本样稿展示原理图、原文件审计与验证方案。</div>
+<p class="keywords">关键词：Logistic 回归；线性判别分析；概率校准；无泄漏验证；错误代价</p>
+<div class="columns">
+<section><h2>引言</h2><p>简单模型的价值在于把输入、概率与行动之间的关系明确化。对疾病二分类，研究者既要识别阳性个体，也要判断概率是否可信，以及漏诊与误报是否符合任务代价。线性边界因此是建模结构，模型选择仍需结合验证证据。[1,2]</p><h3>线性评分与条件概率</h3><p>评分 z 由截距与特征加权和组成。固定评分门槛在二维特征空间对应直线。Logistic 将评分经 sigmoid 转成概率；其线性假设作用于 log-odds。训练通过条件交叉熵估计系数，L2 惩罚可限制过大的系数。</p>
+<div class="equation">z = β₀ + xᵀβ<span class="eqnumber">(1)</span></div>
+<div class="equation">p = 1 / [1 + exp(−z)]<span class="eqnumber">(2)</span></div></section>
+<section><h2>从类条件分布到后验</h2><p>LDA 先估计各类均值、共享协方差和先验，再用 Bayes 规则计算后验。共享协方差允许类内相关；两类对数密度的共同二次项相减抵消，留下线性判别分数。若允许各类使用不同协方差，则通常形成 QDA 的二次边界。</p>
+<div class="equation">X | Y = k ∼ N(μₖ, Σ)<span class="eqnumber">(3)</span></div>
+<p>两类方法可得到相同形式的 sigmoid 评分，但 Logistic 直接拟合条件概率，LDA 则从生成分布推导评分。图 1 用一维设定展示这种联系。对二元或 one-hot 输入，高斯假设属于近似，应检查其预测和校准后果。</p>
+<p class="note">模型对象、概率来源与估计目标应一起解释；线性形式本身不能决定方法优劣。</p></section>
+</div>
+<figure><img src="figures/figure-1-mechanism.svg" alt="相同方差的高斯分布及其后验概率"><figcaption>图 1 | 从类条件分布到后验概率。设两类均值为 0、2，共同方差为 1，先验各半；分数差为 2x−2，因此 p＝sigmoid(2x−2)，默认边界为 x＝1。曲线为机制示意，不代表教学数据的拟合结果。</figcaption></figure>
+<div class="folio"><span>LINEAR CLASSIFICATION · METHODS</span><span>01</span></div>
+</article>
+<article class="page p2">
+<div class="running"><span>线性模型：从假设到证据</span><span>数据审计与讨论</span></div>
+<h1>数据审计与评价框架</h1><p class="deck">围绕当前 CSV 的描述性审计，建立后续模型比较的证据边界。</p>
+<figure><img src="figures/figure-2-audit.svg" alt="当前教学数据的类别构成和缺失分布"><figcaption>图 2 | 当前教学文件的直接审计。左：结局分布；右：仅展示缺失记录数最高的六个输入，百分比分母均为 270。统计来自 data/heart.csv，未据此选择模型或阈值。</figcaption></figure>
+<div class="columns compact">
+<section><h2>实践设计</h2><p>按主标签分层划分 80% 开发集与 20% 锁定测试集，固定随机种子 2026。开发集交叉验证中，在每个训练折拟合数值填补、标准化、分类填补、one-hot 编码与模型；验证折仅转换并预测。模型与阈值在开发数据中选择，完整方案冻结后评价测试集。[2]</p>
+<h3>比较对象与估计负担</h3><p>患病比例基线检查个人特征增益，Gaussian NB 提供类内条件独立参照。Logistic 与 LDA 则比较条件概率和生成分布两条路线。编码后维度决定参数计数；全水平指示列的冗余须单独处理。</p>
+<table><thead><tr><th>模型</th><th>主要建模对象</th></tr></thead><tbody>
+<tr><td>Logistic</td><td>条件概率与线性 logit</td></tr>
+<tr><td>LDA</td><td>类条件高斯与共享协方差</td></tr>
+<tr><td>Gaussian NB</td><td>类内条件独立的各特征分布</td></tr>
+</tbody></table><p class="note">参考编码后维度为 q：Logistic 的系数计数为 q＋1；LDA 还需估计共享协方差。</p></section>
+<section><h2>审计发现与讨论</h2><p>本次审计确认：样本构成为 120／150，ca 与 thal 分别缺失 181、151 条。课程文字中的“无缺失”与当前文件不一致，应以输入版本核对和训练折内处理为前提。高比例缺失会增加解释压力；填补可使算法运行，但不等同于恢复真实观测。</p><p>评价应分别报告排序（ROC-AUC、AP）、概率质量（Brier、log loss、校准）和阈值错误。代价 5×FN＋FP 连接漏诊与误报；AUC 较高并不自动意味着代价更低。Bootstrap 表达抽样不确定性，系数稳定性与预测稳定性需要分别检查。</p>
+<h3>解释边界</h3><p>OR 解释需明确单位、参照与其他变量固定。模型系数为条件关联；内部评价不能自动支持因果效应、跨医院泛化或临床部署。完整分析应使主张、证据、推理与适用边界一致。</p></section>
+</div>
+<div class="endmatter"><p><b>数据与图示说明　</b>数据与图示：图 1 为设定分布的机制图；图 2 为项目当前 CSV 的基础审计。模型性能比较需在统一开发协议下另行报告。</p>
+<p><b>资料来源　</b>[1]《线性模型、LDA 与 Logistic Regression》课程课件，第 4–13 页。<br>
+[2] student-worksheet.md：建模目标、实验协议与评价框架。<br>
+[3] data/heart.csv：当前项目教学文件，审计日期 2026-11-03。</p></div>
+<div class="folio"><span>COURSE RESEARCH BRIEF · LAYOUT PROOF</span><span>02</span></div>
+</article><script>
+window.addEventListener('load', async () => {
+  await document.fonts.ready;
+  const checks = [...document.querySelectorAll('.page')].map((page, index) => {
+    const last = page.querySelector('.endmatter') || page.querySelector('figure');
+    const footer = page.querySelector('.folio');
+    return {page:index+1, clearance_px:Math.round(footer.getBoundingClientRect().top-last.getBoundingClientRect().bottom)};
+  });
+  document.body.dataset.layoutCheck = JSON.stringify(checks);
+});
+</script></body></html>

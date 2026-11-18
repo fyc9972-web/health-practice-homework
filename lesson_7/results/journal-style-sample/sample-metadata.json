@@ -1,0 +1,24 @@
+{
+  "source": "data/heart.csv",
+  "audit_date": "2026-11-03",
+  "source_sha256": "6b8a44d8e5623d899703dff71267019b47bfb3282ef85c422c14b133c700a29d",
+  "n": 270,
+  "positive": 120,
+  "negative": 150,
+  "missing_by_feature": {
+    "age": 0,
+    "sex": 0,
+    "cp": 0,
+    "trestbps": 22,
+    "chol": 9,
+    "fbs": 25,
+    "restecg": 0,
+    "thalach": 21,
+    "exang": 21,
+    "oldpeak": 24,
+    "slope": 103,
+    "ca": 181,
+    "thal": 151
+  },
+  "mode": "layout proof; file audit and simulated mechanisms"
+}
