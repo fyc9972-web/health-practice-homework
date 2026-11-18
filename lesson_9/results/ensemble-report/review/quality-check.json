@@ -1,0 +1,16 @@
+{
+  "input_hashes_unchanged": true,
+  "wdbc_saved_metrics_verified": true,
+  "ctg_saved_metrics_verified": true,
+  "pdf_pages": 14,
+  "figures": 12,
+  "tables": 13,
+  "equation_groups": 13,
+  "editable_word_equations": 15,
+  "memo_character_counts": [
+    285,
+    286
+  ],
+  "page_overflow": false,
+  "status": "passed"
+}

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="401.22pt" height="165.816pt" viewBox="0 0 401.22 165.816" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T19:48:01.244757</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 165.816 
+L 401.22 165.816 
+L 401.22 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 200.61 31.45968 
+L 101.565 66.02652 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #bcc5ca; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 200.61 31.45968 
+L 299.655 66.02652 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #b56332; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 101.565 86.12352 
+L 50.0616 127.1214 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #bcc5ca; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 101.565 86.12352 
+L 149.1066 127.1214 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #bcc5ca; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 299.655 86.12352 
+L 248.1516 127.1214 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #bcc5ca; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 299.655 86.12352 
+L 347.1966 127.1214 
+" clip-path="url(#p1326a82daf)" style="fill: none; stroke: #b56332; stroke-width: 1.6; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #bcc5ca" x="143.1639" y="49.14504" transform="rotate(-0 143.1639 49.14504)">yes</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #b56332" x="258.0561" y="49.14504" transform="rotate(-0 258.0561 49.14504)">no</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #bcc5ca" x="67.8897" y="107.0244" transform="rotate(-0 67.8897 107.0244)">yes</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #bcc5ca" x="133.2594" y="107.0244" transform="rotate(-0 133.2594 107.0244)">no</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #bcc5ca" x="265.9797" y="107.0244" transform="rotate(-0 265.9797 107.0244)">yes</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: middle; fill: #b56332" x="331.3494" y="107.0244" transform="rotate(-0 331.3494 107.0244)">no</text>
+   </g>
+   <g id="text_7">
+    <g id="patch_2">
+     <path d="M 175.46093 33.262286 
+L 225.75907 33.262286 
+Q 229.26307 33.262286 229.26307 29.758286 
+L 229.26307 13.867954 
+Q 229.26307 10.363954 225.75907 10.363954 
+L 175.46093 10.363954 
+Q 171.95693 10.363954 171.95693 13.867954 
+L 171.95693 29.758286 
+Q 171.95693 33.262286 175.46093 33.262286 
+z
+" style="fill: #f7f9f9; stroke: #929fa7; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(175.46093 19.729697)">worst perimeter</text>
+    <!-- $\leq$ 105.95000 -->
+    <g style="fill: #283138" transform="translate(178.3815 27.674863)">
+     <text>
+      <tspan x="1.46" y="-0.75" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">≤</tspan>
+      <tspan x="7.918306" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="9.94562" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">1</tspan>
+      <tspan x="14.003801" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="18.061983" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">5</tspan>
+      <tspan x="22.120165" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="24.147478" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">9</tspan>
+      <tspan x="28.20566" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">5</tspan>
+      <tspan x="32.263842" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="36.322023" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="40.380205" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_8">
+    <g id="patch_3">
+     <path d="M 67.483695 87.926126 
+L 135.646305 87.926126 
+Q 139.150305 87.926126 139.150305 84.422126 
+L 139.150305 68.531794 
+Q 139.150305 65.027794 135.646305 65.027794 
+L 67.483695 65.027794 
+Q 63.979695 65.027794 63.979695 68.531794 
+L 63.979695 84.422126 
+Q 63.979695 87.926126 67.483695 87.926126 
+z
+" style="fill: #f7f9f9; stroke: #929fa7; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(67.483695 74.393537)">worst concave points</text>
+    <!-- $\leq$ 0.17245 -->
+    <g style="fill: #283138" transform="translate(83.388 82.338703)">
+     <text>
+      <tspan x="1.46" y="-0.75" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">≤</tspan>
+      <tspan x="7.918306" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="9.94562" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="14.003801" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="16.031115" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">1</tspan>
+      <tspan x="20.089296" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">7</tspan>
+      <tspan x="24.147478" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">2</tspan>
+      <tspan x="28.20566" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">4</tspan>
+      <tspan x="32.263842" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">5</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_9">
+    <g id="patch_4">
+     <path d="M 265.164211 87.926126 
+L 334.145789 87.926126 
+Q 337.649789 87.926126 337.649789 84.422126 
+L 337.649789 68.531794 
+Q 337.649789 65.027794 334.145789 65.027794 
+L 265.164211 65.027794 
+Q 261.660211 65.027794 261.660211 68.531794 
+L 261.660211 84.422126 
+Q 261.660211 87.926126 265.164211 87.926126 
+z
+" style="fill: #f7f9f9; stroke: #929fa7; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(265.164211 74.393537)">mean concave points</text>
+    <!-- $\leq$ 0.05001 -->
+    <g style="fill: #283138" transform="translate(281.478 82.338703)">
+     <text>
+      <tspan x="1.46" y="-0.75" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">≤</tspan>
+      <tspan x="7.918306" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="9.94562" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="14.003801" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="16.031115" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="20.089296" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">5</tspan>
+      <tspan x="24.147478" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="28.20566" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="32.263842" y="-0.75" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_10">
+    <g id="patch_5">
+     <path d="M 10.087827 149.064778 
+L 90.035373 149.064778 
+Q 93.539373 149.064778 93.539373 145.560778 
+L 93.539373 129.582903 
+Q 93.539373 126.078903 90.035373 126.078903 
+L 10.087827 126.078903 
+Q 6.583827 126.078903 6.583827 129.582903 
+L 6.583827 145.560778 
+Q 6.583827 149.064778 10.087827 149.064778 
+z
+" style="fill: #ffffff; stroke: #a9b5bc; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(10.087827 135.444646)">benign 198 / malignant 4</text>
+    <!-- $\hat{p}$ = 0.020 -->
+    <g style="fill: #283138" transform="translate(34.9141 143.477355)">
+     <text>
+      <tspan x="3.731895" y="-1.078125" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">̂</tspan>
+      <tspan x="0" y="-0.65" style="font-style: italic; font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">p</tspan>
+      <tspan x="3.677582" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="5.704895" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">=</tspan>
+      <tspan x="9.966156" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="11.993469" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="16.051651" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="18.078964" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="22.137146" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">2</tspan>
+      <tspan x="26.195328" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_11">
+    <g id="patch_6">
+     <path d="M 113.192311 149.064778 
+L 185.020889 149.064778 
+Q 188.524889 149.064778 188.524889 145.560778 
+L 188.524889 129.582903 
+Q 188.524889 126.078903 185.020889 126.078903 
+L 113.192311 126.078903 
+Q 109.688311 126.078903 109.688311 129.582903 
+L 109.688311 145.560778 
+Q 109.688311 149.064778 113.192311 149.064778 
+z
+" style="fill: #ffffff; stroke: #a9b5bc; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(113.192311 135.444646)">benign 0 / malignant 3</text>
+    <!-- $\hat{p}$ = 1.000 -->
+    <g style="fill: #283138" transform="translate(133.9591 143.477355)">
+     <text>
+      <tspan x="3.731895" y="-1.078125" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">̂</tspan>
+      <tspan x="0" y="-0.65" style="font-style: italic; font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">p</tspan>
+      <tspan x="3.677582" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="5.704895" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">=</tspan>
+      <tspan x="9.966156" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="11.993469" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">1</tspan>
+      <tspan x="16.051651" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="18.078964" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="22.137146" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="26.195328" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_12">
+    <g id="patch_7">
+     <path d="M 210.207569 149.064778 
+L 286.095631 149.064778 
+Q 289.599631 149.064778 289.599631 145.560778 
+L 289.599631 129.582903 
+Q 289.599631 126.078903 286.095631 126.078903 
+L 210.207569 126.078903 
+Q 206.703569 126.078903 206.703569 129.582903 
+L 206.703569 145.560778 
+Q 206.703569 149.064778 210.207569 149.064778 
+z
+" style="fill: #ffffff; stroke: #a9b5bc; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(210.207569 135.444646)">benign 13 / malignant 8</text>
+    <!-- $\hat{p}$ = 0.381 -->
+    <g style="fill: #283138" transform="translate(233.0041 143.477355)">
+     <text>
+      <tspan x="3.731895" y="-1.078125" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">̂</tspan>
+      <tspan x="0" y="-0.65" style="font-style: italic; font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">p</tspan>
+      <tspan x="3.677582" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="5.704895" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">=</tspan>
+      <tspan x="9.966156" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="11.993469" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="16.051651" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="18.078964" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">3</tspan>
+      <tspan x="22.137146" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">8</tspan>
+      <tspan x="26.195328" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="text_13">
+    <g id="patch_8">
+     <path d="M 307.493725 149.064778 
+L 386.899475 149.064778 
+Q 390.403475 149.064778 390.403475 145.560778 
+L 390.403475 129.582903 
+Q 390.403475 126.078903 386.899475 126.078903 
+L 307.493725 126.078903 
+Q 303.989725 126.078903 303.989725 129.582903 
+L 303.989725 145.560778 
+Q 303.989725 149.064778 307.493725 149.064778 
+z
+" style="fill: #fbf4ee; stroke: #b56332; stroke-width: 0.7; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 7.3px; font-family: 'Arial'; fill: #283138" transform="translate(307.493725 135.444646)">benign 3 / malignant 112</text>
+    <!-- $\hat{p}$ = 0.974 -->
+    <g style="fill: #283138" transform="translate(332.0491 143.477355)">
+     <text>
+      <tspan x="3.731895" y="-1.078125" style="font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">̂</tspan>
+      <tspan x="0" y="-0.65" style="font-style: italic; font-size: 7.3px; font-family: 'STIXGeneral'; fill: #283138">p</tspan>
+      <tspan x="3.677582" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="5.704895" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">=</tspan>
+      <tspan x="9.966156" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138"> </tspan>
+      <tspan x="11.993469" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">0</tspan>
+      <tspan x="16.051651" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">.</tspan>
+      <tspan x="18.078964" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">9</tspan>
+      <tspan x="22.137146" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">7</tspan>
+      <tspan x="26.195328" y="-0.65" style="font-size: 7.3px; font-family: 'Arial'; fill: #283138">4</tspan>
+     </text>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1326a82daf">
+   <rect x="2.52" y="2.52" width="396.18" height="160.776"/>
+  </clipPath>
+ </defs>
+</svg>

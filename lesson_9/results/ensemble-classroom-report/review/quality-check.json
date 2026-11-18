@@ -1,0 +1,22 @@
+{
+  "input_hashes_unchanged": true,
+  "wdbc_prediction_metrics_cv_stability_consistent": true,
+  "ctg_prediction_metrics_cv_stability_consistent": true,
+  "memo_character_counts": [
+    307,
+    324
+  ],
+  "figures": 12,
+  "main_figures": 11,
+  "supplement_figures": 1,
+  "tables": 19,
+  "formula_blocks": 10,
+  "editable_word_equation_lines": 21,
+  "speaker_notes": 10,
+  "html_self_contained": true,
+  "html_fragment_links_valid": true,
+  "report_characters": 26093,
+  "pdf_pages": 24,
+  "pdf_text_readable_no_blank_pages": true,
+  "status": "passed"
+}

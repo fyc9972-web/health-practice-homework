@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="871.67249pt" height="378.080829pt" viewBox="0 0 871.67249 378.080829" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T16:58:13.783552</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 378.080829 
+L 871.67249 378.080829 
+L 871.67249 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 60.148282 149.397537 
+L 375.174982 149.397537 
+Q 382.222559 149.397537 382.222559 142.99154 
+L 382.222559 84.05637 
+Q 382.222559 77.650373 375.174982 77.650373 
+L 60.148282 77.650373 
+Q 53.100705 77.650373 53.100705 84.05637 
+L 53.100705 142.99154 
+Q 53.100705 149.397537 60.148282 149.397537 
+z
+" clip-path="url(#p1c28dc7a97)" style="fill: #f0f4f7; stroke: #18344a; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 60.148282 242.284491 
+L 375.174982 242.284491 
+Q 382.222559 242.284491 382.222559 235.878494 
+L 382.222559 176.943324 
+Q 382.222559 170.537327 375.174982 170.537327 
+L 60.148282 170.537327 
+Q 53.100705 170.537327 53.100705 176.943324 
+L 53.100705 235.878494 
+Q 53.100705 242.284491 60.148282 242.284491 
+z
+" clip-path="url(#p1c28dc7a97)" style="fill: #f0f7f6; stroke: #16877f; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 60.148282 344.78044 
+L 375.174982 344.78044 
+Q 382.222559 344.78044 382.222559 338.374443 
+L 382.222559 276.236274 
+Q 382.222559 269.830277 375.174982 269.830277 
+L 60.148282 269.830277 
+Q 53.100705 269.830277 53.100705 276.236274 
+L 53.100705 338.374443 
+Q 53.100705 344.78044 60.148282 344.78044 
+z
+" clip-path="url(#p1c28dc7a97)" style="fill: #f7f8f9; stroke: #8998a2; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 219.423526 147.552685 
+Q 219.423526 158.36602 219.423526 167.725911 
+" clip-path="url(#p1c28dc7a97)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 222.023526 162.525911 
+L 219.423526 167.725911 
+L 216.823526 162.525911 
+z
+" clip-path="url(#p1c28dc7a97)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 219.423526 240.438857 
+Q 219.423526 254.455877 219.423526 267.019453 
+" clip-path="url(#p1c28dc7a97)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 222.023526 261.819453 
+L 219.423526 267.019453 
+L 216.823526 261.819453 
+z
+" clip-path="url(#p1c28dc7a97)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #18344a" x="11.52" y="23.84" transform="rotate(-0 11.52 23.84)">a</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(145.094288 108.738955)">WDBC：30 特征，恶性为正类</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(167.796398 125.981455)">训练 341  /  验证 114</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 11px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(144.989445 201.637081)">CTG：21 特征，病理型为正类</text>
+    <text style="font-size: 11px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(124.71507 218.808253)">训练 1,279  /  验证 424；录音不跨集合</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(153.240538 303.120983)">开发集五折 CV  +  固定验证集</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(136.525695 318.614733)">LR / SVM 折内标准化；测试标签封存</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #18344a" x="43.234097" y="33.260989" transform="rotate(-0 43.234097 33.260989)">相同问题，两套互补数据</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_7">
+    <path d="M 539.205826 110.961556 
+L 775.863468 110.961556 
+Q 783.968181 110.961556 783.968181 104.55556 
+L 783.968181 68.041378 
+Q 783.968181 61.635381 775.863468 61.635381 
+L 539.205826 61.635381 
+Q 531.101113 61.635381 531.101113 68.041378 
+L 531.101113 104.55556 
+Q 531.101113 110.961556 539.205826 110.961556 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #f0f4f7; stroke: #18344a; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 466.263403 213.457505 
+L 642.135691 213.457505 
+Q 650.240405 213.457505 650.240405 207.051508 
+L 650.240405 154.522335 
+Q 650.240405 148.116338 642.135691 148.116338 
+L 466.263403 148.116338 
+Q 458.158689 148.116338 458.158689 154.522335 
+L 458.158689 207.051508 
+Q 458.158689 213.457505 466.263403 213.457505 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #f0f7f6; stroke: #16877f; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 676.98596 213.457505 
+L 848.805891 213.457505 
+Q 856.910605 213.457505 856.910605 207.051508 
+L 856.910605 154.522335 
+Q 856.910605 148.116338 848.805891 148.116338 
+L 676.98596 148.116338 
+Q 668.881246 148.116338 668.881246 154.522335 
+L 668.881246 207.051508 
+Q 668.881246 213.457505 676.98596 213.457505 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #fcf3ec; stroke: #d87a43; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 611.348562 108.299729 
+Q 584.592925 127.936933 559.00901 146.714156 
+" clip-path="url(#pf8e7111979)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 564.739471 145.733434 
+L 559.00901 146.714156 
+L 561.662709 141.541354 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 707.728815 108.35564 
+Q 732.501563 127.936115 756.134044 146.615319 
+" clip-path="url(#pf8e7111979)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 753.666743 141.351059 
+L 756.134044 146.615319 
+L 750.442256 145.430603 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 498.682258 344.78044 
+L 816.387036 344.78044 
+Q 824.49175 344.78044 824.49175 338.374443 
+L 824.49175 273.033276 
+Q 824.49175 266.627279 816.387036 266.627279 
+L 498.682258 266.627279 
+Q 490.577544 266.627279 490.577544 273.033276 
+L 490.577544 338.374443 
+Q 490.577544 344.78044 498.682258 344.78044 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #f0f4f7; stroke: #18344a; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 557.572966 211.088334 
+Q 582.564473 238.439173 606.575561 264.717035 
+" clip-path="url(#pf8e7111979)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 604.987304 259.124411 
+L 606.575561 264.717035 
+L 601.148508 262.632066 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 757.552474 211.144637 
+Q 734.529623 238.440661 712.443863 264.625665 
+" clip-path="url(#pf8e7111979)" style="fill: none; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+    <path d="M 717.783948 262.32708 
+L 712.443863 264.625665 
+L 713.809046 258.974446 
+z
+" clip-path="url(#pf8e7111979)" style="fill: #8998a2; stroke: #8998a2; stroke-width: 1.3; stroke-linecap: round"/>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #18344a" x="418.445592" y="23.84" transform="rotate(-0 418.445592 23.84)">b</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #18344a" x="657.534647" y="90.108625" transform="rotate(-0 657.534647 90.108625)">单棵树：拟合能力与不稳定性</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(511.019078 167.726765)">Bagging / 随机森林</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(516.958922 184.601765)">独立训练 → 平均</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(524.199547 200.59239)">主要降低方差</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(742.192019 167.411922)">Boosting</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(725.655301 184.607234)">顺序学习 → 修正</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(722.895926 200.557234)">主要增强拟合能力</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(637.534647 293.478859)">共同评价</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(590.294022 309.518703)">排序与分类表现 · 重训稳定性</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(610.294022 325.503859)">解释成本 · 验证范围</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Noto Sans SC'; text-anchor: start; fill: #18344a" x="454.916803" y="33.260989" transform="rotate(-0 454.916803 33.260989)">从机制到证据的研究路线</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1c28dc7a97">
+   <rect x="43.234097" y="46.260989" width="352.378858" height="320.29984"/>
+  </clipPath>
+  <clipPath id="pf8e7111979">
+   <rect x="454.916803" y="46.260989" width="405.235687" height="320.29984"/>
+  </clipPath>
+ </defs>
+</svg>

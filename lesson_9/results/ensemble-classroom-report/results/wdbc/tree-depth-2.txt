@@ -1,0 +1,10 @@
+|--- worst perimeter <= 105.95000
+|   |--- worst concave points <= 0.17245
+|   |   |--- class: 0
+|   |--- worst concave points >  0.17245
+|   |   |--- class: 1
+|--- worst perimeter >  105.95000
+|   |--- mean concave points <= 0.05001
+|   |   |--- class: 0
+|   |--- mean concave points >  0.05001
+|   |   |--- class: 1

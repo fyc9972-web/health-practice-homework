@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="692.64pt" height="306.73528pt" viewBox="0 0 692.64 306.73528" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T17:06:15.573130</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 306.73528 
+L 692.64 306.73528 
+L 692.64 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 346.32 63.82764 
+L 178.92 114.72156 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #bdcad2; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 346.32 63.82764 
+L 513.72 114.72156 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #16877f; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 178.92 151.47828 
+L 91.872 216.5094 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #bdcad2; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 178.92 151.47828 
+L 259.272 216.5094 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #bdcad2; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 513.72 151.47828 
+L 426.672 216.5094 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #bdcad2; stroke-width: 1.1; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 513.72 151.47828 
+L 594.072 216.5094 
+" clip-path="url(#peb4a0e1732)" style="fill: none; stroke: #16877f; stroke-width: 3; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #8998a2" x="250.5672" y="89.2746" transform="rotate(-0 250.5672 89.2746)">是</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #16877f" x="442.0728" y="89.2746" transform="rotate(-0 442.0728 89.2746)">否</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #8998a2" x="123.3432" y="183.99384" transform="rotate(-0 123.3432 183.99384)">是</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #8998a2" x="231.1488" y="183.99384" transform="rotate(-0 231.1488 183.99384)">否</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #8998a2" x="458.1432" y="183.99384" transform="rotate(-0 458.1432 183.99384)">是</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #16877f" x="565.9488" y="183.99384" transform="rotate(-0 565.9488 183.99384)">否</text>
+   </g>
+   <g id="text_7">
+    <g id="patch_2">
+     <path d="M 309.095 62.494592 
+L 383.545 62.494592 
+Q 390.045 62.494592 390.045 55.994592 
+L 390.045 34.903967 
+Q 390.045 28.403967 383.545 28.403967 
+L 309.095 28.403967 
+Q 302.595 28.403967 302.595 34.903967 
+L 302.595 55.994592 
+Q 302.595 62.494592 309.095 62.494592 
+z
+" style="fill: #f1f6f8; stroke: #18344a; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(309.095 43.703967)">worst perimeter</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(311.609844 54.794592)">≤ 105.95000？</text>
+   </g>
+   <g id="text_8">
+    <g id="patch_3">
+     <path d="M 129.720781 150.145232 
+L 228.119219 150.145232 
+Q 234.619219 150.145232 234.619219 143.645232 
+L 234.619219 122.554607 
+Q 234.619219 116.054607 228.119219 116.054607 
+L 129.720781 116.054607 
+Q 123.220781 116.054607 123.220781 122.554607 
+L 123.220781 143.645232 
+Q 123.220781 150.145232 129.720781 150.145232 
+z
+" style="fill: #f1f6f8; stroke: #18344a; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(129.720781 131.354607)">worst concave points</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(149.759844 142.445232)">≤ 0.17245？</text>
+   </g>
+   <g id="text_9">
+    <g id="patch_4">
+     <path d="M 464.379375 150.145232 
+L 563.060625 150.145232 
+Q 569.560625 150.145232 569.560625 143.645232 
+L 569.560625 122.554607 
+Q 569.560625 116.054607 563.060625 116.054607 
+L 464.379375 116.054607 
+Q 457.879375 116.054607 457.879375 122.554607 
+L 457.879375 143.645232 
+Q 457.879375 150.145232 464.379375 150.145232 
+z
+" style="fill: #f1f6f8; stroke: #18344a; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(464.379375 131.354607)">mean concave points</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(484.559844 142.445232)">≤ 0.05001？</text>
+   </g>
+   <g id="text_10">
+    <g id="patch_5">
+     <path d="M 51.29075 251.772916 
+L 132.45325 251.772916 
+Q 138.95325 251.772916 138.95325 245.272916 
+L 138.95325 224.502604 
+Q 138.95325 218.002604 132.45325 218.002604 
+L 51.29075 218.002604 
+Q 44.79075 218.002604 44.79075 224.502604 
+L 44.79075 245.272916 
+Q 44.79075 251.772916 51.29075 251.772916 
+z
+" style="fill: #f8f9fa; stroke: #bdcad2; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(51.29075 233.302604)">良性 198 · 恶性 4</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(57.826687 243.302604)">P(恶性) = 0.020</text>
+   </g>
+   <g id="text_11">
+    <g id="patch_6">
+     <path d="M 224.24075 251.772916 
+L 294.30325 251.772916 
+Q 300.80325 251.772916 300.80325 245.272916 
+L 300.80325 224.502604 
+Q 300.80325 218.002604 294.30325 218.002604 
+L 224.24075 218.002604 
+Q 217.74075 218.002604 217.74075 224.502604 
+L 217.74075 245.272916 
+Q 217.74075 251.772916 224.24075 251.772916 
+z
+" style="fill: #f8f9fa; stroke: #bdcad2; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(224.24075 233.302604)">良性 0 · 恶性 3</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(225.226687 243.302604)">P(恶性) = 1.000</text>
+   </g>
+   <g id="text_12">
+    <g id="patch_7">
+     <path d="M 388.86575 251.772916 
+L 464.47825 251.772916 
+Q 470.97825 251.772916 470.97825 245.272916 
+L 470.97825 224.502604 
+Q 470.97825 218.002604 464.47825 218.002604 
+L 388.86575 218.002604 
+Q 382.36575 218.002604 382.36575 224.502604 
+L 382.36575 245.272916 
+Q 382.36575 251.772916 388.86575 251.772916 
+z
+" style="fill: #f8f9fa; stroke: #bdcad2; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(388.86575 233.302604)">良性 13 · 恶性 8</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(392.626687 243.302604)">P(恶性) = 0.381</text>
+   </g>
+   <g id="text_13">
+    <g id="patch_8">
+     <path d="M 553.49075 251.772916 
+L 634.65325 251.772916 
+Q 641.15325 251.772916 641.15325 245.272916 
+L 641.15325 224.502604 
+Q 641.15325 218.002604 634.65325 218.002604 
+L 553.49075 218.002604 
+Q 546.99075 218.002604 546.99075 224.502604 
+L 546.99075 245.272916 
+Q 546.99075 251.772916 553.49075 251.772916 
+z
+" style="fill: #eaf5f2; stroke: #16877f; stroke-width: 1.5; stroke-linejoin: miter"/>
+    </g>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(553.49075 233.302604)">良性 3 · 恶性 112</text>
+    <text style="font-size: 10px; font-family: 'Noto Sans SC'; fill: #18344a" transform="translate(560.026687 243.302604)">P(恶性) = 0.974</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Noto Sans SC'; text-anchor: middle; fill: #16877f" x="346.32" y="292.85028" transform="rotate(-0 346.32 292.85028)">课堂样本：worst perimeter = 120；mean concave points = 0.08 → 右、右 → 112 / 115 ≈ 0.974</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="peb4a0e1732">
+   <rect x="11.52" y="11.52" width="669.6" height="282.744"/>
+  </clipPath>
+ </defs>
+</svg>

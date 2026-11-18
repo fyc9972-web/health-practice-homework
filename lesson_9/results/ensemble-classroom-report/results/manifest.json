@@ -1,0 +1,23 @@
+{
+  "python": "3.12.6",
+  "sklearn": "1.9.1",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "seed": 1010,
+  "timestamp_utc": "2026-11-16T08:56:24.778379+00:00",
+  "input_sha256": {
+    "student-worksheet.md": "093e1cdbc6510a46a32610a64bd5d8d6385ab918e7dcc6e61b804c0cb1f53371",
+    "slides\\ensemble-pbl.pptx": "bb18ce7c355f23bb0536f38284501bd5b7b30ba45a2c48c940dc4fcc896c8df3",
+    "scripts\\demo_ensemble.py": "405d95601ddb1a614af2addfc3e34a51f9a6defe45a2313b99c922e35956e3ad",
+    "data\\student\\train.csv": "37214ac7e40fcbe336e3f8d0b3567bd979d22ed7d734ce592b3d171ce05608b7",
+    "data\\student\\validation.csv": "8df3d9aa50c9ab55b18ab9f2f0d87e17c12c4d1c4b8a53126644a25f2d9d809f",
+    "data-ctg\\student\\train.csv": "322985b0949b8e6fea7194ef33a90f89887145eaea7089d045fb65b11ac7cf32",
+    "data-ctg\\student\\validation.csv": "39e2c11fca58d7102d7b1047bbcd4dd96709452bc6bfbefb67bb1609fd910115"
+  },
+  "test_labels_read": false,
+  "cv_folds": 5,
+  "stability_refits": 30,
+  "importance_repeats": 20,
+  "conditional_validation_bootstrap_attempts": 1000,
+  "note": "No teacher or locked-test files are opened. Reference results are not used as new measurements."
+}
