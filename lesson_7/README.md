@@ -2,6 +2,8 @@
 
 ## 结果入口
 
+- [AI 学习对话摘录](results/AI%E5%AD%A6%E4%B9%A0%E5%AF%B9%E8%AF%9D%E6%91%98%E5%BD%95.md)
+
 - [课堂重点](results/%E8%AF%BE%E5%A0%82%E9%87%8D%E7%82%B9.md)
 - [线性模型课程报告（可编辑原稿）](results/journal-formal/%E7%BA%BF%E6%80%A7%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B%E8%AF%BE%E7%A8%8B%E6%8A%A5%E5%91%8A_%E5%90%8C%E7%89%88%E5%BC%8FWord%E5%9B%BE%E7%89%88.docx)
 - [作业 / 报告 PDF](results/journal-formal/lesson_7.pdf)

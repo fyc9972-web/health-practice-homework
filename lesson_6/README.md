@@ -2,6 +2,8 @@
 
 ## 结果入口
 
+- [AI 学习对话摘录](results/AI%E5%AD%A6%E4%B9%A0%E5%AF%B9%E8%AF%9D%E6%91%98%E5%BD%95.md)
+
 - [课堂重点](results/%E8%AF%BE%E5%A0%82%E9%87%8D%E7%82%B9.md)
 - [朴素贝叶斯论文式报告（可编辑原稿）](results/naive-bayes-paper.docx)
 - [作业 / 报告 PDF](results/naive-bayes-paper.pdf)
